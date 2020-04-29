@@ -1,9 +1,11 @@
 os:
-  - linux dist: bionic
+  - linux
   - windows
   - osx
 language: node_js
 node_js:
   - "12"
+cache:
+  npm: false
 script:
   - node test.js
